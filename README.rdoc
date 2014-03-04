@@ -1,6 +1,9 @@
 == README
 
 -Run "bundle install"
+
+<br>
+
 -Run "rails server" or the server of your choice
 
 -Have fun searching Github!
