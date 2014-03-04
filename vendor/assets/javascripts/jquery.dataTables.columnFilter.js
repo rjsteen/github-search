@@ -132,7 +132,7 @@
                     fnOnFiltered();
                 });
             } else {
-                input.keyup(function () {
+                input.keyup(function (e) {
                     if (oTable.fnSettings().oFeatures.bServerSide && iFilterLength != 0) {
                         //If filter length is set in the server-side processing mode
                         //Check has the user entered at least iFilterLength new characters
@@ -153,9 +153,11 @@
                             $(this).data("dt-iLastFilterLength", iCurrentFilterLength);
                         }
                     }
+                    if (e.which == 13) {
                     /* Filter on the column (the index) of this element */
                     oTable.fnFilter(this.value, _fnColumnIndex(index), regex, smart); //Issue 37
                     fnOnFiltered();
+                    }
                 });
             }
 

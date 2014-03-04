@@ -4,9 +4,8 @@ $(document).ready(function(){
 
 	//set up datatables
 	$('.datatable').dataTable({
-		"sDom": '<"top"f>rt<"bottom"p><"clear">',
 		 "iDisplayLength": 10,
-   		 "aLengthMenu": [[10, 20, 50, -1], [10, 20, 50, "All"]],
+   		 "aLengthMenu": [[10, 20, 50, 100], [10, 20, 50, 100]],
           bProcessing: true,
           bServerSide: true,
           sAjaxSource: $('#searches').data('source'),
@@ -16,10 +15,10 @@ $(document).ready(function(){
        	  ]
 
 
-	}).columnFilter({ sPlaceHolder: "head:before",
+	}).fnFilterOnReturn().columnFilter({ sPlaceHolder: "head:before",
 		aoColumns: [ null, {type: 'text'}]
-	}).fnSetFilteringDelay(250);
-	//prevent github limits
+	});
+	//prevent github limits (1000)
 	
 	$(".last.paginate_button").hide();
 

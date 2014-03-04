@@ -1,8 +1,13 @@
 <h1>Git Hub Search!</h1>
 
+<ol>
+  <li>First type your query in the search box for the repository.</li>
+  <li>After searching you can sort by stars or filter by language.</li>
+</ol>
 
+<p>Note: Hit "enter" after typing your query to apply the search or filter.</p>
 
-<table id="searches" class='datatable' data-source="<%= search_searches_path(format: "json") %>">
+<table id="searches" class='datatable' data-source="<%= searches_url(format: "json") %>">
     <thead>
       <tr>
         <th></th>

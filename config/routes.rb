@@ -3,11 +3,10 @@ GithubSearch::Application.routes.draw do
   resources :searches do
     collection do 
       get 'log_in'
-      get 'search'
     end
   end
 
-  root 'searches#log_in'
+  root 'searches#index'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

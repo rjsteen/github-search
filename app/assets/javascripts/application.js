@@ -17,4 +17,4 @@
 
 //= require dataTables/jquery.dataTables
 //= require jquery.dataTables.columnFilter
-//= require SetFilteringDelay.js
+//= require filterOnReturn.js
