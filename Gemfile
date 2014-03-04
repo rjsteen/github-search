@@ -60,4 +60,6 @@ gem 'debugger', group: [:development, :test]
 
 gem 'rails_12factor', group: :production
 
+gem 'unicorn'
+
 ruby "2.0.0"
