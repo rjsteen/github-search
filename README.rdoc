@@ -8,7 +8,7 @@
 
 2.  ENV['GITHUB_CLIENT_SECRET']
 
-Make sure you set up these environment variables with valid a GITHUB_CLIENT_ID and GITHUB_CLIENT_SECRET keys in your GitHub account by registering an application.  
+Make sure you set up these environment variables with valid GITHUB_CLIENT_ID and GITHUB_CLIENT_SECRET keys in your GitHub account by registering an application.  
 
 The Homepage URL should be your root url path (ie...http://localhost:3000)
 
