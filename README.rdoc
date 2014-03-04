@@ -12,7 +12,7 @@ Make sure you set up these environment variables with valid GITHUB_CLIENT_ID and
 
 The Homepage URL should be your root url path (ie...http://localhost:3000)
 
-The Authorization callback URL should be like "http://localhost:3000/searches"
+The Authorization callback URL should be like http://localhost:3000/searches
 
 Note: Change your root URL to be the server root you are running.  If you are using "rails server" then the above will work.    
 
