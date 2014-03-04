@@ -2,7 +2,19 @@
 
 -Run "bundle install"
 
+-The program references two environment variables:
 
+1. ENV['GITHUB_CLIENT_ID']
+
+2.  ENV['GITHUB_CLIENT_SECRET']
+
+Make sure you set up these environment variables with valid a GITHUB_CLIENT_ID and GITHUB_CLIENT_SECRET keys in your GitHub account by registering an application.  
+
+The Homepage URL should be your root url path (ie...http://localhost:3000)
+
+The Authorization callback URL should be like "http://localhost:3000/searches"
+
+Note: Change your root URL to be the server root you are running.  If you are using "rails server" then the above will work.    
 
 -Run "rails server" or the server of your choice
 
