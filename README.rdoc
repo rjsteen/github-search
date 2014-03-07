@@ -19,3 +19,6 @@ Note: Change your root URL to be the server root you are running.  If you are us
 -Run "rails server" or the server of your choice
 
 -Have fun searching Github!
+
+
+<%= link_to "Journey with Rails", "https://docs.google.com/presentation/d/13RVcJm-TEhKOHOfMgYg1jNq1Xqq_rqT1V5dANYyfnmU/edit?usp=sharing" %>

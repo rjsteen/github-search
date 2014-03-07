@@ -1,14 +1,10 @@
 class GithubDatatable
 
-  include Rails.application.routes.url_helpers
-
-
   delegate :params, to: :@view
 
   def initialize(view, token)
     @view = view
     @github = Github.new(:oauth_token => token)
-
   end
 
   def as_json(options = {})
